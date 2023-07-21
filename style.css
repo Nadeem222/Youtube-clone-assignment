@@ -21,6 +21,7 @@ h4 {
 i {
     font-size: 1.5rem;
     color: #ffffff;
+    cursor: pointer;
 }
 
 p,
@@ -180,32 +181,35 @@ img {
     top: 60px;
 }
 .sidebar{
-    background-color: #212121;
+    background-color: #FFFFFF;
     padding-top: 10px;
-    width: 240px;
+    width: 200px;
     overflow-y: scroll;
     color: #ffff;
 }
 .sidebar a{
     text-decoration: none;
-    color: #ffff;
+    color: #000000;
 }
 .sidebar-items{
     display: flex;
     flex-direction: column;
 }
+.sidebar-items i{
+    color: #000000;
+}
 .sidebar-item{
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0 24px;
+    padding: 0 20px;
     height: 40px;
 }
 .sidebar-item:hover{
-    background-color: #4c4c4c;
+    background-color: #E5E5E5;
 }
 .sidebar-item i{
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .content{
@@ -234,11 +238,16 @@ img {
 }
 
 .video-container{
-    display: grid;
-    grid-template-columns: repeat(4 , ifr);
-    grid-gap: 18px;
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* grid-template-columns: repeat(4 - ifr);
+    grid-gap: 18px; */
     overflow-y: scroll;
     height: calc(100vh - 116px);
+    margin: 5PX;
 }
 .channel-logo{
     position: relative;
@@ -251,13 +260,13 @@ img {
     margin-left: 20px;
     position: relative;
     transition: .5s;
-    width: 100%;
+    width: 350;
 }
 .corner-wrapper {
     display: block;
     overflow: hidden;
     width: 300px;
-    height: 150px;
+    height: 180px;
     border-radius: 10px;
     transform: translateZ(0px);
     border: 3px solid #eee;
@@ -267,11 +276,32 @@ img {
     position: relative;
     transition: 0.5s;
     transition-delay: .5s;
-    border: 1px solid black;
+
+    width: 320PX;
+    height: 250px;
   }
   .video-details{
     display: flex;
   }
   .detail{
     margin-left: 12px;
+
+  }
+  .views-uploads{
+    display: flex;
+  }
+  .tittle{
+    width: 230px;
+  }
+  .uploads{
+    margin-left: 5px;
+    color: #979797;
+  }
+  .channel-name{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #979797;
+  }
+  .views{
+    color: #979797;
   }
